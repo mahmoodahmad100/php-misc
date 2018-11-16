@@ -40,7 +40,7 @@ class AccessObjectsAsArrays implements ArrayAccess
 	 * @param string $key
 	 * @return boolean
 	 */
-	private function isset($key)
+	private function exists($key)
 	{
 		return isset($this->data[$key]);
 	}
@@ -87,7 +87,7 @@ class AccessObjectsAsArrays implements ArrayAccess
 	 */
 	public function offsetExists($key)
 	{
-		return $this->isset($key);
+		return $this->exists($key);
 	}
 
 	/**
