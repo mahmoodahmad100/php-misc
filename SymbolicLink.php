@@ -3,7 +3,7 @@
 /**
  * create a symbolic link
  */
-class symbolicLink
+class SymbolicLink
 {
 	/**
 	 * the directory or the file that you want to create a shortcut for
@@ -33,4 +33,4 @@ class symbolicLink
 }
 
 // example:
-new symbolicLink('/home/users/100/project/storage/app/public','/home/users/100/project/public/storage');
+new SymbolicLink('/home/users/100/project/storage/app/public','/home/users/100/project/public/storage');
